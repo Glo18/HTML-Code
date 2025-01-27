@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premier League Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+      margin: 20px;
+      text-align: center;
+    }
+    table {
+      border-collapse: collapse;
+      width: 90%;
+      margin: 0 auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      background-color: #1a1a1a;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #333;
+      text-align: left;
+    }
+    th {
+      background-color: #333;
+    }
+    tr:nth-child(even) {
+      background-color: #222;
+    }
+    tr:hover {
+      background-color: #444;
+    }
+    .club-logo {
+      height: 20px;
+      margin-right: 5px;
+    }
+    .last5 {
+      display: flex;
+      gap: 5px;
+    }
+    .circle {
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .win {
+      background-color: green;
+    }
+    .draw {
+      background-color: gray;
+    }
+    .loss {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Premier League Table</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Pos</th>
+        <th>Club</th>
+        <th>MP</th>
+        <th>W</th>
+        <th>D</th>
+        <th>L</th>
+        <th>GF</th>
+        <th>GA</th>
+        <th>GD</th>
+        <th>Pts</th>
+        <th>Last 5</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td><img class="club-logo" src="liverpool.png" alt="Liverpool"> Liverpool</td>
+        <td>22</td>
+        <td>16</td>
+        <td>5</td>
+        <td>1</td>
+        <td>54</td>
+        <td>21</td>
+        <td>33</td>
+        <td>53</td>
+        <td>
+          <div class="last5">
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle draw"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td><img class="club-logo" src="arsenal.png" alt="Arsenal"> Arsenal</td>
+        <td>23</td>
+        <td>13</td>
+        <td>8</td>
+        <td>2</td>
+        <td>44</td>
+        <td>21</td>
+        <td>23</td>
+        <td>47</td>
+        <td>
+          <div class="last5">
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle loss"></span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td><img class="club-logo" src="nottm.png" alt="Nottm Forest"> Nottm Forest</td>
+        <td>23</td>
+        <td>13</td>
+        <td>8</td>
+        <td>2</td>
+        <td>44</td>
+        <td>21</td>
+        <td>23</td>
+        <td>47</td>
+        <td>
+          <div class="last5">
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle loss"></span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+        <td><img class="club-logo" src="mancity.png" alt="Man City"> Man City</td>
+        <td>23</td>
+        <td>13</td>
+        <td>8</td>
+        <td>2</td>
+        <td>44</td>
+        <td>21</td>
+        <td>23</td>
+        <td>47</td>
+        <td>
+          <div class="last5">
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle loss"></span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>5</td>
+        <td><img class="club-logo" src="newcastle.png" alt="Newcastle"> Newcastle</td>
+        <td>23</td>
+        <td>13</td>
+        <td>8</td>
+        <td>2</td>
+        <td>44</td>
+        <td>21</td>
+        <td>23</td>
+        <td>47</td>
+        <td>
+          <div class="last5">
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle loss"></span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>6</td>
+        <td><img class="club-logo" src="chelsea.png" alt="Chelsea"> Chelsea</td>
+        <td>23</td>
+        <td>13</td>
+        <td>8</td>
+        <td>2</td>
+        <td>44</td>
+        <td>21</td>
+        <td>23</td>
+        <td>47</td>
+        <td>
+          <div class="last5">
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle loss"></span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>7</td>
+        <td><img class="club-logo" src="bornemouth.png" alt="Bournemouth"> Bournemouth</td>
+        <td>23</td>
+        <td>13</td>
+        <td>8</td>
+        <td>2</td>
+        <td>44</td>
+        <td>21</td>
+        <td>23</td>
+        <td>47</td>
+        <td>
+          <div class="last5">
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle loss"></span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>8</td>
+        <td><img class="club-logo" src="aston.png" alt="Aston Villa"> Aston Villa</td>
+        <td>23</td>
+        <td>13</td>
+        <td>8</td>
+        <td>2</td>
+        <td>44</td>
+        <td>21</td>
+        <td>23</td>
+        <td>47</td>
+        <td>
+          <div class="last5">
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle loss"></span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>9</td>
+        <td><img class="club-logo" src="brighton.png" alt="Brighton"> Brighton</td>
+        <td>23</td>
+        <td>13</td>
+        <td>8</td>
+        <td>2</td>
+        <td>44</td>
+        <td>21</td>
+        <td>23</td>
+        <td>47</td>
+        <td>
+          <div class="last5">
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle loss"></span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>10</td>
+        <td><img class="club-logo" src="fulham.png" alt="Fulham"> Fulham</td>
+        <td>23</td>
+        <td>13</td>
+        <td>8</td>
+        <td>2</td>
+        <td>44</td>
+        <td>21</td>
+        <td>23</td>
+        <td>47</td>
+        <td>
+          <div class="last5">
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle loss"></span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>11</td>
+        <td><img class="club-logo" src="brentford.png" alt="Brentford"> Brentford</td>
+        <td>23</td>
+        <td>13</td>
+        <td>8</td>
+        <td>2</td>
+        <td>44</td>
+        <td>21</td>
+        <td>23</td>
+        <td>47</td>
+        <td>
+          <div class="last5">
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle loss"></span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>12</td>
+        <td><img class="club-logo" src="united.png" alt="Man United"> Man United</td>
+        <td>23</td>
+        <td>13</td>
+        <td>8</td>
+        <td>2</td>
+        <td>44</td>
+        <td>21</td>
+        <td>23</td>
+        <td>47</td>
+        <td>
+          <div class="last5">
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle loss"></span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>13</td>
+        <td><img class="club-logo" src="crystal.png" alt="Crystal Palace"> Crystal Palace</td>
+        <td>23</td>
+        <td>13</td>
+        <td>8</td>
+        <td>2</td>
+        <td>44</td>
+        <td>21</td>
+        <td>23</td>
+        <td>47</td>
+        <td>
+          <div class="last5">
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle loss"></span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>14</td>
+        <td><img class="club-logo" src="westham.png" alt="West Ham"> West Ham</td>
+        <td>23</td>
+        <td>13</td>
+        <td>8</td>
+        <td>2</td>
+        <td>44</td>
+        <td>21</td>
+        <td>23</td>
+        <td>47</td>
+        <td>
+          <div class="last5">
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle loss"></span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>15</td>
+        <td><img class="club-logo" src="tottenham.png" alt="Tottenham"> Tottenham</td>
+        <td>23</td>
+        <td>13</td>
+        <td>8</td>
+        <td>2</td>
+        <td>44</td>
+        <td>21</td>
+        <td>23</td>
+        <td>47</td>
+        <td>
+          <div class="last5">
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle loss"></span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>16</td>
+        <td><img class="club-logo" src="everton.png" alt="Everton"> Everton</td>
+        <td>23</td>
+        <td>13</td>
+        <td>8</td>
+        <td>2</td>
+        <td>44</td>
+        <td>21</td>
+        <td>23</td>
+        <td>47</td>
+        <td>
+          <div class="last5">
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle loss"></span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>17</td>
+        <td><img class="club-logo" src="leicester.png" alt="Leicester City"> Leicester City</td>
+        <td>23</td>
+        <td>13</td>
+        <td>8</td>
+        <td>2</td>
+        <td>44</td>
+        <td>21</td>
+        <td>23</td>
+        <td>47</td>
+        <td>
+          <div class="last5">
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle loss"></span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>18</td>
+        <td><img class="club-logo" src="wolves.png" alt="Wolves"> Wolves</td>
+        <td>23</td>
+        <td>13</td>
+        <td>8</td>
+        <td>2</td>
+        <td>44</td>
+        <td>21</td>
+        <td>23</td>
+        <td>47</td>
+        <td>
+          <div class="last5">
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle loss"></span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>19</td>
+        <td><img class="club-logo" src="ipswich.png" alt="Ipswich Town"> Ipswich Town</td>
+        <td>23</td>
+        <td>13</td>
+        <td>8</td>
+        <td>2</td>
+        <td>44</td>
+        <td>21</td>
+        <td>23</td>
+        <td>47</td>
+        <td>
+          <div class="last5">
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle loss"></span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>20</td>
+        <td><img class="club-logo" src="southampton.png" alt="Southampton"> Soutampton</td>
+        <td>23</td>
+        <td>13</td>
+        <td>8</td>
+        <td>2</td>
+        <td>44</td>
+        <td>21</td>
+        <td>23</td>
+        <td>47</td>
+        <td>
+          <div class="last5">
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle loss"></span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td><img class="club-logo" src="arsenal.png" alt="Arsenal"> Arsenal</td>
+        <td>23</td>
+        <td>13</td>
+        <td>8</td>
+        <td>2</td>
+        <td>44</td>
+        <td>21</td>
+        <td>23</td>
+        <td>47</td>
+        <td>
+          <div class="last5">
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle win"></span>
+            <span class="circle loss"></span>
+          </div>
+        </td>
+      </tr>
+
+
+      
+    </tbody>
+  </table>
+</body>
+</html>
